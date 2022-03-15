@@ -1,0 +1,94 @@
+html, body{
+    margin:0;
+    padding:0;
+    font-size: 15px;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top{
+    height: 40px;
+}
+.top span{
+    font-size: 2rem;
+}
+.menu{
+    height: 40px;
+}
+.menu ul{
+    height:20px;
+    position:relative;
+    top: 5px;
+    padding:0px;
+    margin: 0px;
+}
+.menu ul > li:nth-child(1){
+    margin-left: 0px;
+}
+.menu ul > li{
+    list-style-type: none;
+    float: left;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.itembox{
+    width:215px;
+    margin-right: 20px;
+}
+.itembox .content{
+    margin-top: 15px;
+}
+.content .name{
+    font-size: 1.2rem;
+}
+.content .text1{
+    margin-top: 5px;
+}
+.content .text2{
+    margin-top: 5px;
+    color: gray;
+}
+.content .pricebox{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 5px;
+    position:relative;
+}
+.pricebox .price{
+    float: left;
+}
+.pricebox .discountedprice{
+    float: left;
+    font-size: 0.8rem;
+    text-decoration-line:line-through;
+    color: gray;
+    position: absolute;
+    left: 65px;
+    bottom:0;
+}
+.pricebox .discountedrate{
+    float: right;
+    color:red;
+}
+.content .highlight{
+    margin-top: 5px;
+    display: flex;
+}
+.highlight .subbox{
+    border: 1px gray solid;
+    margin-right: 5px;
+    color: gray;
+    font-size: 0.7rem;
+    padding:2px;
+}
