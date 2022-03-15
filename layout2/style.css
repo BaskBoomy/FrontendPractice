@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    padding:0;
+    margin:0;
+    height: 100%;
+    margin: 0 auto;   
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1025px;
+}
+.top{
+    height: 40px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.top span{
+    height: 20px;
+    position: relative;
+    top: 10px;
+}
+.middle{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.category::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+.category img{
+    width: 100%;
+    height: 100%;
+}
+.category .above_text{
+    position:absolute;
+    text-align: center;
+}
+.category .above_maintitle{
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    font-size: 18px;
+}
+.category .above_subtitle{
+    color:white;
+    font-size: 15px;
+}
+.bottom{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+.sub_btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.bottom .btn_text1{
+    font-size: 13px;
+    color:gray;
+}
+.bottom .btn_text2{
+    font-size: 15px;
+    margin-top: 3px;
+    color:gray;
+    font-weight: 550;
+}
+
+@media(max-width:500px) {
+    .section{
+        width: 100%;
+    }
+    .middle{
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
+    .sub_btn{
+        margin-bottom: 10px;
+    }
+}
