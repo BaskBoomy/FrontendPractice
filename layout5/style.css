@@ -1,0 +1,75 @@
+
+html, body{
+    padding:0;
+    margin: 0;
+    font-size: 15px;
+}
+.layout5box{
+    text-align: center;
+}
+.section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    height: 600px;
+}
+.longbox{
+    width: 30%;
+}
+.box{
+    border-radius: 5px;
+    border: 1px solid rgb(231, 231, 231);
+    margin-bottom: 20px;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.longbox:nth-child(2n){
+    margin-top: 20px;
+}
+.boximg{
+    width: 100%;
+    height: 160px;
+}
+.boximg img{
+    width: 100%;
+}
+.content{
+    padding:0 10px;
+    height: 100%;
+}
+.category{
+    font-size: 0.8rem;
+    text-align: left;
+    color: gray;
+}
+.category span{
+    float:right;
+}
+.title{
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.box .detail_btn{
+    width: 92%;
+    position: absolute;
+    text-align: right;
+    bottom: 10px;
+    color: rgb(255, 153, 0);
+    font-weight: bold;
+    border-bottom: 2px solid rgb(255, 153, 0);
+    padding-bottom: 10px;
+    
+}
+.more_btn{
+    margin-top: 80px;
+    border: none;
+    padding: 10px 30px;
+    background-color: rgb(46, 46, 46);
+    border-radius: 5px;
+    color: white;
+}
