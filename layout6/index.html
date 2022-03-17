@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Layout6</title>
+</head>
+
+<body>
+    <div class="section">
+        <div class="top">Table Name</div>
+        <div class="menu">
+            <ul class="menulist">
+                <li class="menutext">Menu1</li>
+                <li class="menutext">Menu2</li>
+                <li class="menutext">Menu3</li>
+                <li class="menutext">Menu4</li>
+            </ul>
+            <div class="count_content">총 <span>--</span>개의 글이 있습니다.</div>
+        </div>
+        <div class="container">
+            <div class="tablecontainer">
+                <table>
+                    <thead>
+                        <td>구분</td>
+                        <td>제목</td>
+                        <td>작성자</td>
+                        <td>작성일</td>
+                        <td>조회수</td>
+                    </thead>
+                    <tr>
+                        <td>일반</td>
+                        <td>Title of Content</td>
+                        <td>Writer</td>
+                        <td>Date</td>
+                        <td>hits</td>
+                    </tr>
+                    <tr>
+                        <td>일반</td>
+                        <td>Title of Content</td>
+                        <td>Writer</td>
+                        <td>Date</td>
+                        <td>hits</td>
+                    </tr>
+                    <tr>
+                        <td>일반</td>
+                        <td>Title of Content</td>
+                        <td>Writer</td>
+                        <td>Date</td>
+                        <td>hits</td>
+                    </tr>
+                    <tr>
+                        <td>일반</td>
+                        <td>Title of Content</td>
+                        <td>Writer</td>
+                        <td>Date</td>
+                        <td>hits</td>
+                    </tr>
+                    <tr>
+                        <td>일반</td>
+                        <td>Title of Content</td>
+                        <td>Writer</td>
+                        <td>Date</td>
+                        <td>hits</td>
+                    </tr>
+                    <tr>
+                        <td>일반</td>
+                        <td>Title of Content</td>
+                        <td>Writer</td>
+                        <td>Date</td>
+                        <td>hits</td>
+                    </tr>
+                    <tr>
+                        <td>일반</td>
+                        <td>Title of Content</td>
+                        <td>Writer</td>
+                        <td>Date</td>
+                        <td>hits</td>
+                    </tr>
+                    <tr>
+                        <td>일반</td>
+                        <td>Title of Content</td>
+                        <td>Writer</td>
+                        <td>Date</td>
+                        <td>hits</td>
+                    </tr>
+                    <tr>
+                        <td>일반</td>
+                        <td>Title of Content</td>
+                        <td>Writer</td>
+                        <td>Date</td>
+                        <td>hits</td>
+                    </tr>
+                    <tr>
+                        <td>일반</td>
+                        <td>Title of Content</td>
+                        <td>Writer</td>
+                        <td>Date</td>
+                        <td>hits</td>
+                    </tr>
+                </table>
+                <div class="tablebottom">
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                    <button class="writebtn">Write</button>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="dropdown">
+                제목 + 본문
+                <button class="dropbtn" onclick="myFunction()">V</button>
+            </div>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">제목 + 본문</a>
+                <a href="#">제목</a>
+                <a href="#">제목</a>
+            </div>
+            <div class="serachbox">
+                <form class="example" action="">
+                    <input type="text" name="search2">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+</body>
+
+</html>
